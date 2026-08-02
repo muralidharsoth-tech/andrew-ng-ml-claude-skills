@@ -1,0 +1,30 @@
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Claude Code 本地配置（不上传）
+.claude/settings.json
+.claude/memory/
+.claude/plans/
+
+# 临时文件
+*.tmp
+*.log
+*.swp
+*~

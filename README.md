@@ -62,6 +62,21 @@
 
 ---
 
+## 多平台支持
+
+技能采用开放 Agent Skills 格式（SKILL.md），除 Claude Code 外，**DeepSeek Harness 等支持 Skills 规范的 agent 工具可直接使用，无需任何改动**。
+
+### DeepSeek Harness 安装
+
+```bash
+# 用户级（所有项目可用）
+cp -r skills/* ~/.dsh/skills/
+
+# 或项目级（仅当前项目）
+cp -r skills/* 你的项目路径/.dsh/skills/
+
+---
+
 ## 工作流程
 
 每个技能遵循统一的交互流程：

@@ -75,6 +75,10 @@ cp -r skills/* ~/.dsh/skills/
 # 或项目级（仅当前项目）
 cp -r skills/* 你的项目路径/.dsh/skills/
 
+```
+
+安装后在对话中直接描述需求或输入 `/linear-regression` 等命令即可触发。
+
 ---
 
 ## 工作流程

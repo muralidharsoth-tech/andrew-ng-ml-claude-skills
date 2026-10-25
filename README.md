@@ -15,7 +15,18 @@
 - 🔧 需要快速上手 ML 项目但不想从零写代码的工程师
 - 📊 有数据、想尝试不同算法对比效果的初学者
 
-**前提条件**：安装了 [Claude Code](https://claude.ai/code)，本地有 Python + NumPy + Matplotlib。
+**前提条件**：安装了 [Claude Code](https://claude.ai/code)，并准备好 Python、NumPy 和 Matplotlib。仓库提供环境检查脚本，建议首次使用前先运行。
+
+### 首次使用前：检查 Python 环境
+
+在仓库根目录执行：
+
+```bash
+python -m pip install -r requirements.txt
+python check_env.py
+```
+
+如果电脑上同时安装了多个 Python，请使用运行 `check_env.py` 的同一个解释器安装依赖，例如 `py -m pip install -r requirements.txt`。检查未通过前，不要运行技能生成的 Python 文件。
 
 ---
 
@@ -59,6 +70,20 @@
    | "诊断神经网络" | `neural-network-diagnosis` |
    | "检测异常数据" | `anomaly-detection` |
    | "搭建推荐系统" | `recommender-system` |
+
+### 不确定如何描述问题？
+
+不需要一开始就准确说出算法名称。可以按下面的模板描述，技能会先澄清信息，再推荐模型：
+
+```text
+我想解决：{预测数值 / 二分类 / 多分类 / 异常检测 / 推荐}
+数据位置或示例：{CSV 路径，或粘贴 3-5 行样例}
+目标列：{列名；推荐系统可说明评分列或物品列}
+样本量和特征数：{大约多少行、多少个输入特征}
+特殊情况：{缺失值、文本字段、类别不平衡等；不确定可写“不确定”}
+```
+
+如果信息不足，技能应先提问，不应直接猜测算法或参数。确认推荐后再进入具体训练技能。
 
 ---
 
@@ -109,6 +134,8 @@ cp -r skills/* 你的项目路径/.dsh/skills/
 ## 技能目录结构
 
 ```
+requirements.txt          # Python 依赖
+check_env.py              # 环境自检
 skills/
 ├── linear-regression/
 │   ├── SKILL.md                # 主技能：交互流程 + 代码模板
@@ -181,3 +208,4 @@ skills/
 ## 许可
 
 MIT License © 2026 — 详见 [LICENSE](./LICENSE)
+

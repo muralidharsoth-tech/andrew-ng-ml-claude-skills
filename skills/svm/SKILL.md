@@ -48,6 +48,12 @@ Step 3: 训练线性核探针 → 看准确率
 
 ## 交互流程
 
+### 环境预检（生成代码前必须执行）
+
+先确认当前 Python 解释器可以导入 
+缺少依赖时暂停执行并提示：python -m pip install -r requirements.txt，然后运行 python check_env.py；预检未通过时不要声称代码可运行。
+
+
 严格按以下 9 步执行，不要跳过任何一步。
 
 ---
@@ -827,3 +833,5 @@ SVM 对特征尺度敏感。所有模板在训练前统一执行 z-score 标准�
 
 ### 6. 参考文件
 - `references/gaussian-kernel-svm.md`：高斯核(RBF)代码模板。当 Step 3 判断需要高斯核时使用。支持二分类和多分类，自动适配 1 特征/2+ 特征可视化。
+
+

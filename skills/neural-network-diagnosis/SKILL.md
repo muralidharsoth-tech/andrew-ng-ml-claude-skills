@@ -589,3 +589,6 @@ Windows GBK 环境下，`print` 中的 Unicode 特殊字符需替换：`θ→the
 - 如果启用了早停：替换 `gradient_descent()` 函数定义和调用
 - 如果修改了网络结构：同步修改 Theta 初始化、forward/back prop 的维度
 - 修改后在文件头追加优化记录注释
+
+
+

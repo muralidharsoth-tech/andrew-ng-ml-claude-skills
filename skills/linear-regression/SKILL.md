@@ -26,6 +26,17 @@ description: |
 
 严格按以下 7 步执行，不要跳过任何一步：
 
+### 步骤 0：运行环境预检
+
+在生成或运行 Python 代码前，先确认当前解释器可以导入 `numpy` 和 `matplotlib`。如果任一依赖缺失，暂停训练并提示：
+
+```bash
+python -m pip install -r requirements.txt
+python check_env.py
+```
+
+如果用户没有仓库根目录中的 `requirements.txt`，给出等价命令 `python -m pip install numpy matplotlib`，并要求用户重新运行环境检查。不要继续输出“可运行”代码，直到预检通过。
+
 ### 步骤 1：收集数据
 
 首先确认是单变量还是多变量：

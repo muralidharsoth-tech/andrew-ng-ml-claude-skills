@@ -28,7 +28,8 @@ description: |
 
 ### 环境预检（生成代码前必须执行）
 
-先确认当前 Python 解释器可以导入 
+先确认当前 Python 解释器可以导入 numpy 和 matplotlib。
+
 缺少依赖时暂停执行并提示：python -m pip install -r requirements.txt，然后运行 python check_env.py；预检未通过时不要声称代码可运行。
 
 
@@ -677,5 +678,6 @@ matplotlib 的 label/title 不走 GBK，可以用 Unicode。
 ### 参考文件
 - `references/polynomial-logistic.md`：多项式特征 + 逻辑回归代码模板，**非线性决策边界时使用**。包含 `make_polynomial()` 特征构造函数和弯曲决策边界的可视化
 - `references/multi-class-logistic.md`：多分类 Softmax 逻辑回归代码模板，**K > 2 时使用**。包含 Softmax 函数、One-hot 编码、决策区域可视化和 max-probability 3D 曲面
+
 
 

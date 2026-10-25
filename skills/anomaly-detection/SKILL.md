@@ -35,7 +35,8 @@ description: |
 
 ### 环境预检（生成代码前必须执行）
 
-先确认当前 Python 解释器可以导入 
+先确认当前 Python 解释器可以导入 numpy 和 matplotlib。
+
 缺少依赖时暂停执行并提示：python -m pip install -r requirements.txt，然后运行 python check_env.py；预检未通过时不要声称代码可运行。
 
 
@@ -781,5 +782,6 @@ print(f"epsilon = {epsilon:.6f} (p(x) 第 {percentile}% 分位数)")
 | [references/gaussian-transform.md](references/gaussian-transform.md) | log/sqrt/Box-Cox 变换方法 + 代码 | 任何特征不符合高斯分布时 |
 | [references/multivariate-gaussian.md](references/multivariate-gaussian.md) | 多元高斯模型原理 + 公式 + 实现 | m>n 且有特征相关性时 |
 | [references/feature-engineering.md](references/feature-engineering.md) | 构造组合特征的方法与代码 | m≤n 且有特征相关性时 |
+
 
 

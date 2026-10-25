@@ -37,7 +37,8 @@ description: |
 
 ### 环境预检（生成代码前必须执行）
 
-先确认当前 Python 解释器可以导入 
+先确认当前 Python 解释器可以导入 numpy 和 matplotlib。
+
 缺少依赖时暂停执行并提示：python -m pip install -r requirements.txt，然后运行 python check_env.py；预检未通过时不要声称代码可运行。
 
 
@@ -729,5 +730,6 @@ print(f"\n训练完成！最终 J = {J_history[-1]:.6f}, 耗时 {elapsed:.1f}s")
 | [references/content-based-filtering.md](references/content-based-filtering.md) | 基于内容推荐实现（给定特征学 theta） | 走路线 A 时 |
 | [references/mean-normalization.md](references/mean-normalization.md) | 均值归一化原理+代码+冷启动 | 总是（两种路线都需要） |
 | [references/similar-items.md](references/similar-items.md) | 相似物品检索方法（距离+Top-K+可视化） | 总是（需要相似物品时） |
+
 
 

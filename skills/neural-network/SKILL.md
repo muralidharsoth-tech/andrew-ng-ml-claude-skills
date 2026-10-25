@@ -29,7 +29,8 @@ description: |
 
 ### 环境预检（生成代码前必须执行）
 
-先确认当前 Python 解释器可以导入 
+先确认当前 Python 解释器可以导入 numpy 和 matplotlib。
+
 缺少依赖时暂停执行并提示：python -m pip install -r requirements.txt，然后运行 python check_env.py；预检未通过时不要声称代码可运行。
 
 
@@ -947,5 +948,6 @@ matplotlib 的 label/title 不走 GBK，可以用 Unicode。
 
 ### 参考文件
 - `references/multi-class-nn.md`：多分类 Softmax 神经网络代码模板，**K > 2 时使用**。包含 Softmax 函数、One-hot 编码、多类交叉熵代价、K 色决策区域可视化
+
 
 
